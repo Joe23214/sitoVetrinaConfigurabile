@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/giova/Desktop/Developing/sitiMiei/sitoVetrina/sitoVetrinaJmix/./src/main/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/giova/Desktop/Developing/sitiMiei/sitoVetrina/sitoVetrinaJmix/./src/main/frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/giova/Desktop/Developing/sitiMiei/sitoVetrina/sitoVetrinaJmix/build/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\giova\\Desktop\\Developing\\sitiMiei\\sitoVetrina\\sitoVetrinaJmix\\build\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\giova\\Desktop\\Developing\\sitiMiei\\sitoVetrina\\sitoVetrinaJmix\\build\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/giova/Desktop/Developing/sitiMiei/sitoVetrina/sitoVetrinaJmix/build/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/giova/Desktop/Developing/sitiMiei/sitoVetrina/sitoVetrinaJmix/build/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/giova/Desktop/Developing/sitiMiei/sitoVetrina/sitoVetrinaJmix/./src/main/frontend/generated/jar-resources",
+  "themeName": "sitoVetrina",
+  "clientServiceWorkerSource": "C:\\Users\\giova\\Desktop\\Developing\\sitiMiei\\sitoVetrina\\sitoVetrinaJmix\\build\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}

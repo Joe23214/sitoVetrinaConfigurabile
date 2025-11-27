@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mainView xmlns="http://jmix.io/schema/flowui/main-view"
+          title="msg://MainView.title">
+
+    <actions>
+        <action id="logoutAction" type="logout"/>
+    </actions>
+
+    <appLayout>
+        <navigationBar>
+            <header id="header" classNames="jmix-main-view-header horizontal-layout"
+                    css="justify-content: space-between; align-items: center; position: relative;">
+
+                <!-- Hamburger mobile -->
+                <button id="hamburgerButton"
+                        icon="MENU"
+                        classNames="hamburger-button"/>
+
+                <!-- Tutta la navbar dentro un contenitore -->
+                <div id="navContent" classNames="nav-content horizontal-layout" css="gap: 20px; align-items: center;">
+
+                    <!-- Sinistra: nome sito -->
+                    <h2 id="applicationTitle" classNames="jmix-main-view-application-title">
+                        <anchor id="baseLink"
+                                href="home"
+                                text="msg://applicationTitle.text"
+                                classNames="jmix-main-view-application-title-base-link"/>
+                    </h2>
+
+                    <!-- Centro: menu -->
+                    <nav id="navigation" classNames="jmix-main-view-navigation horizontal-layout menu-center" css="gap: 20px;">
+                        <horizontalMenu id="menu"/>
+                    </nav>
+
+                    <!-- Destra: userIndicator + logout -->
+                    <div classNames="horizontal-layout" css="gap: 10px; align-items: center;">
+                        <hbox alignItems="CENTER">
+                            <icon id="userIcon" icon="lumo:user" classNames="user-icon"/>
+                            <userIndicator id="userIndicator"/>
+                            <button id="logoutButton"
+                                    action="logoutAction"
+                                    classNames="jmix-logout-button"
+                                    visible="true"/>
+                            <button id="loginButton"
+                                    icon="SIGN_IN"
+                                    css="color:white;"
+                                    visible="true"/>
+                        </hbox>
+                    </div>
+
+                </div>
+            </header>
+        </navigationBar>
+
+
+        <!-- Layout principale (content + footer) -->
+        <initialLayout>
+        </initialLayout>
+
+    </appLayout>
+</mainView>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://jmix.io/schema/flowui/view"
+      title="msg://home.title">
+
+    <layout classNames="home-layout">
+
+        <!-- LOGO IN ALTO -->
+        <div id="logoContainer" classNames="logo-container">
+            <image id="logo" classNames="logo-top fade-in-section"/>
+        </div>
+
+        <h1 id="homeTitle" classNames="home-title m-xl fade-in-section"></h1>
+
+        <!-- HERO BANNER (80%) -->
+        <div id="hero" classNames="hero-banner mt-l fade-in-section">
+            <image id="heroImage" classNames="hero-image"/>
+            <div id="heroOverlay" classNames="hero-overlay">
+                <div id="heroText" classNames="hero-text">
+                    <h2>La nostra grande passione</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOME SITO -->
+
+
+        <!-- DESCRIZIONE SITO -->
+        <div id="descrCard" classNames="about-card fade-in-section">
+            <div id="descrText" classNames="about-text"></div>
+        </div>
+
+        <!-- GIF / MEDIA PRINCIPALE (75%) -->
+        <!-- GIF / MEDIA PRINCIPALE (75%) -->
+        <div id="mediaSection" classNames="media-section fade-in-section">
+            <image id="mediaGif" classNames="media-content"/>
+        </div>
+
+
+
+        <!-- GALLERIA IMMAGINI + ABOUT -->
+        <div id="gallerySection" classNames="gallery-section ">
+
+            <!-- Prime due immagini affiancate -->
+            <div id="galleryGrid" classNames="gallery-grid fade-in-section">
+                <image id="foto1" classNames="gallery-item"/>
+                <image id="foto2" classNames="gallery-item"/>
+            </div>
+
+            <!-- Sezione About -->
+            <div id="aboutCard" classNames="about-card fade-in-section">
+                <h3 id="aboutTitle"></h3>
+                <div id="aboutText" classNames="about-text"></div>
+            </div>
+
+            <div id="galleryGrid1" classNames="gallery-grid fade-in-section">
+                <image id="foto3" classNames="gallery-item"/>
+                <image id="foto4" classNames="gallery-item"/>
+            </div>
+
+            <!-- Sezione About -->
+            <div id="aboutCard2" classNames="about-card fade-in-section">
+                <h3 id="aboutTitle2"></h3>
+                <div id="aboutText2" classNames="about-text"></div>
+
+                <button id="serviceButton" alignSelf="CENTER" text="msg://Vai!" classNames="newsletter-button"></button>
+            </div>
+            <!-- Carosello immagini finali -->
+            <div id="carouselSection" classNames="carousel-section fade-in-section">
+                <div id="carousel" classNames="carousel">
+                    <image id="carouselFoto1" classNames="carousel-image"/>
+                    <image id="carouselFoto2" classNames="carousel-image"/>
+                    <image id="carouselFoto3" classNames="carousel-image"/>
+                    <image id="carouselFoto4" classNames="carousel-image"/>
+                    <image id="carouselFoto5" classNames="carousel-image"/>
+                    <image id="carouselFoto6" classNames="carousel-image"/>
+                    <image id="carouselFoto7" classNames="carousel-image"/>
+
+                </div>
+            </div>
+        </div>
+        <!-- =================================================== -->
+        <!-- 🕒📍 SEZIONE ORARI + LUOGO COME DUE CARD -->
+        <!-- =================================================== -->
+            <div id="infoCardSection" classNames="info-card-section fade-in-section">
+
+                <div classNames="info-card-container">
+
+                    <!-- Card Orari -->
+                    <div classNames="info-card">
+                        <h3 classNames="address-text" text="Orari di apertura:"></h3>
+                        <div id="orariList" classNames="address-text"></div>
+                    </div>
+
+                    <!-- Card Luogo -->
+                    <div classNames="info-card luogo-card">
+                        <h3 classNames="address-text" text="Dove siamo"></h3>
+                        <div classNames="map-container">
+                            <image id="mapImage" title="Mappa Luogo" css="cursor:pointer;"></image>
+                        </div>
+
+                        <div>
+                            <p css="color: #FFFFFF;" id="addressText"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        <!-- =================================================== -->
+        <!-- ✉️ SEZIONE NEWSLETTER -->
+        <!-- =================================================== -->
+        <div id="newsletterSection" classNames="newsletter-section fade-in-section">
+            <div classNames="newsletter-content">
+                <div classNames="newsletter-icon">✉️</div>
+                <div classNames="newsletter-text">
+                    <h3 text="Iscriviti alla nostra Newsletter"></h3>
+                    <p text="Rimani aggiornato su novità, eventi e promozioni esclusive."></p>
+                </div>
+                <div classNames="newsletter-form">
+                    <textField id="newsletterEmail" placeholder="Inserisci la tua email" classNames="newsletter-input" />
+                    <checkbox id="checkNewsletter" helperText="Confermo di aver letto la Privacy Policy e acconsento al trattamento del mio indirizzo email
+per l’invio della newsletter aziendale.
+"></checkbox>
+                    <button id="newsletterButton" text="Iscriviti" classNames="newsletter-button"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footerSection" classNames="footer-section">
+            <div  classNames="footer-content">
+                <div css="width:20%;" classNames="footer-col">
+                    <h3 text="Riferimenti" ></h3>
+                    <p id="footerNomeSito"></p>
+                    <p id="footerRagioneSociale"></p>
+                    <p id="footerIndirizzo"></p>
+                </div>
+                <div css="width:20%;" classNames="footer-col">
+                    <h3 text="Contatti"></h3>
+                    <p id="footerTelefono"></p>
+                    <p id="footerEmail"></p>
+                </div>
+                <div css="width:20%;" classNames="footer-col">
+                    <h3 text="Seguici"></h3>
+                    <div id="footerSocial" classNames="footer-social"></div>
+                </div>
+                <div css="width:20%;" classNames="footer-col">
+                    <span text=" Il sito utilizza cookie e raccoglie dati secondo la nostra ">  </span>
+                        <div css="color:#d42a3b;" id="privacy" text="Privacy Policy "></div>
+                    <div text=" e "></div>
+                        <div css="color:#d42a3b;" id="cookie" text="Cookie Policy"/>
+                        <div text="Puoi gestire le preferenze in"></div>.
+                        <div css="color:#d42a3b;" id="cookiePref" text="Cookie Preferences"></div>.
+                </div>
+            </div>
+            <p text="© 2025 Tutti i diritti riservati"  classNames="footer-copy"></p>
+        </div>
+        <!-- BANNER COOKIE / PRIVACY -->
+        <div id="cookieBanner" classNames="cookie-banner" css="display:none;">
+            <span text="Questo sito utilizza cookie tecnici e, previo consenso, cookie di terze parti."></span>
+
+            <button id="cookieReject" text="Rifiuta"></button>
+            <button id="cookiePrefsOpen" text="Personalizza"></button>
+            <button id="cookieAcceptAll" text="Accetta tutto"></button>
+        </div>
+
+    </layout>
+</view>

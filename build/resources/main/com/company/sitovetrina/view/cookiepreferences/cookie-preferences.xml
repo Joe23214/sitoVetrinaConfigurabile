@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://jmix.io/schema/flowui/view"
+      title="Preferenze Cookie">
+
+    <layout spacing="true" padding="true">
+
+        <div classNames="cookie-pref-box">
+            <h3 text="Preferenze Cookie"></h3>
+
+            <div classNames="switch-row">
+                <span text="Cookie Tecnici (sempre attivi)"></span>
+            </div>
+
+            <div classNames="switch-row">
+                <span text="Cookie di terze parti (Maps, Video)"></span>
+                <switch id="switchThirdParty"></switch>
+            </div>
+
+            <button id="btnSavePrefs" text="Salva preferenze"></button>
+        </div>
+
+    </layout>
+</view>
